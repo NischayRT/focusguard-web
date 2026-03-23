@@ -24,7 +24,7 @@ const SAFETY_POINTS = [
   {
     title: 'No video is ever stored',
     icon: '○',
-    body: 'AttentionOS never saves, uploads, or transmits your webcam feed. Frames are captured, analyzed in under 200ms, then discarded immediately. Nothing persists beyond the analysis window.',
+    body: 'Focusguard never saves, uploads, or transmits your webcam feed. Frames are captured, analyzed in under 200ms, then discarded immediately. Nothing persists beyond the analysis window.',
   },
   {
     title: 'Entirely local inference',
@@ -34,7 +34,7 @@ const SAFETY_POINTS = [
   {
     title: 'No biometric data stored',
     icon: '○',
-    body: 'AttentionOS does not store facial geometry, embeddings, or any biometric identifiers. The only data saved per session is: duration, focused seconds, away seconds, and a per-minute focus percentage — no face data.',
+    body: 'Focusguard does not store facial geometry, embeddings, or any biometric identifiers. The only data saved per session is: duration, focused seconds, away seconds, and a per-minute focus percentage — no face data.',
   },
   {
     title: 'Open detection thresholds',
@@ -93,7 +93,7 @@ export default function HomePage() {
           }}>
             <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)', boxShadow: '0 0 8px var(--accent)' }}/>
           </div>
-          <span style={{ fontSize: 16, fontWeight: 500, letterSpacing: '0.14em', color: 'var(--text)' }}>AttentionOS</span>
+          <span style={{ fontSize: 16, fontWeight: 500, letterSpacing: '0.14em', color: 'var(--text)' }}>Focusguard</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
@@ -108,7 +108,7 @@ export default function HomePage() {
           ))}
         </div>
 
-        <a href="https://github.com/NischayRT/AttentionOS" target="_blank" rel="noreferrer" style={{
+        <a href="https://github.com/NischayRT/Focusguard" target="_blank" rel="noreferrer" style={{
           fontSize: 14, color: 'var(--accent)', letterSpacing: '0.12em',
           textDecoration: 'none', padding: '7px 18px',
           border: '1px solid var(--accent)', borderRadius: 8,
@@ -172,7 +172,7 @@ export default function HomePage() {
           fontSize: 20, fontWeight: 300, color: 'var(--muted)',
           maxWidth: 560, lineHeight: 1.7, marginBottom: 36,
         }}>
-          AttentionOS uses real-time AI gaze detection to measure exactly when you're
+          Focusguard uses real-time AI gaze detection to measure exactly when you're
           working and when you drift — down to the second. No guesswork. No self-reporting.
         </p>
 
@@ -264,7 +264,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 17, color: 'var(--muted)', lineHeight: 1.8, marginBottom: 28 }}>
-                AttentionOS's AI is not a black box. It is a deterministic, rule-based system built on top of
+                Focusguard's AI is not a black box. It is a deterministic, rule-based system built on top of
                 MediaPipe FaceMesh — Google's open-source face landmark detection library. It does not learn
                 from your data, does not adapt over time, and does not make probabilistic inferences about
                 your emotional state or cognitive load.
@@ -276,7 +276,7 @@ export default function HomePage() {
                 coordinates in normalized (0–1) space.
               </p>
               <p style={{ fontSize: 17, color: 'var(--muted)', lineHeight: 1.8 }}>
-                From those 468 points, AttentionOS extracts three specific signals: <strong style={{ color: 'var(--text)', fontWeight: 500 }}>head yaw</strong> (left/right
+                From those 468 points, Focusguard extracts three specific signals: <strong style={{ color: 'var(--text)', fontWeight: 500 }}>head yaw</strong> (left/right
                 rotation), <strong style={{ color: 'var(--text)', fontWeight: 500 }}>head pitch</strong> (up/down tilt), and <strong style={{ color: 'var(--text)', fontWeight: 500 }}>eye aspect ratio</strong> (detecting closed
                 eyes). If any threshold is exceeded, that second is marked as "away."
               </p>
@@ -315,7 +315,7 @@ export default function HomePage() {
             background: 'var(--surface)',
           }}>
             <div style={{ fontSize: 18, fontWeight: 500, marginBottom: 20, color: 'var(--text)' }}>
-              What AttentionOS's AI cannot and does not do
+              What Focusguard's AI cannot and does not do
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16 }}>
               {[
@@ -438,7 +438,7 @@ export default function HomePage() {
             Start measuring your focus
           </h2>
           <p style={{ fontSize: 17, color: 'var(--muted)', lineHeight: 1.7, marginBottom: 40 }}>
-            Download AttentionOS for Windows. No subscription, no account required to use the timer.
+            Download Focusguard for Windows. No subscription, no account required to use the timer.
             Sign in with Google to save and view your session history.
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -478,7 +478,7 @@ export default function HomePage() {
           }}>
             <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--accent)' }}/>
           </div>
-          <span className="mono" style={{ fontSize: 12, color: 'var(--dim)', letterSpacing: '0.12em' }}>AttentionOS</span>
+          <span className="mono" style={{ fontSize: 12, color: 'var(--dim)', letterSpacing: '0.12em' }}>Focusguard</span>
         </div>
         <div style={{ fontSize: 13, color: 'var(--dim)' }}>
           Built by Nischay Reddy Thigulla · {new Date().getFullYear()}

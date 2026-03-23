@@ -8,11 +8,11 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'AttentionOS — AI-Powered Focus Intelligence',
+  title: 'Focusguard — AI-Powered Focus Intelligence',
   description: 'Real-time gaze detection that tracks when you\'re focused and when you drift. Built for deep work.',
   keywords: 'focus timer, AI productivity, gaze detection, pomodoro, deep work',
   openGraph: {
-    title: 'AttentionOS',
+    title: 'Focusguard',
     description: 'AI surveillance for your focus. Know exactly when you work and when you drift.',
     type: 'website',
   },

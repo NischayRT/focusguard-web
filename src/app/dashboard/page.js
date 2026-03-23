@@ -105,7 +105,7 @@ export default function DashboardPage() {
           <div style={{ width: 28, height: 28, borderRadius: 7, border: '1px solid var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)' }}/>
           </div>
-          <span style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em' }}>AttentionOS</span>
+          <span style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em' }}>Focusguard</span>
         </div>
         <h1 style={{ fontSize: 36, fontWeight: 300, letterSpacing: '-0.02em', textAlign: 'center' }}>Your session dashboard</h1>
         <p style={{ fontSize: 16, color: 'var(--muted)', textAlign: 'center', maxWidth: 400, lineHeight: 1.7 }}>
@@ -137,7 +137,7 @@ export default function DashboardPage() {
           <div style={{ width: 26, height: 26, borderRadius: 7, border: '1px solid var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--accent)' }}/>
           </div>
-          <span style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: 'var(--text)' }}>AttentionOS</span>
+          <span style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: 'var(--text)' }}>Focusguard</span>
         </Link>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
