@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #c8f04a;
+  --accent-dim: rgba(200, 240, 74, 0.15);
+  --bg: #080808;
+  --surface: #0f0f0f;
+  --border: #1a1a1a;
+  --text: #e8e8e8;
+  --muted: #606060;
+  --dim: #303030;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: #080808; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 2px; }
+
+.mono { font-family: var(--font-mono), monospace; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.fade-up   { animation: fadeUp 0.6s ease forwards; }
+.fade-up-1 { animation: fadeUp 0.6s ease 0.1s both; }
+.fade-up-2 { animation: fadeUp 0.6s ease 0.2s both; }
+.fade-up-3 { animation: fadeUp 0.6s ease 0.3s both; }
+.fade-up-4 { animation: fadeUp 0.6s ease 0.4s both; }
