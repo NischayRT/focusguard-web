@@ -373,8 +373,8 @@ export default function HomePage() {
           </div>
 
           <div style={{ padding: '40px', border: '1px solid var(--border)', borderRadius: 12, background: 'var(--surface)' }}>
-            <div className="mono" style={{ fontSize: 12, color: 'var(--text-4)', letterSpacing: '0.12em', marginBottom: 24 }}>ARCHITECTURE FLOW</div>
-            <div className="tech-flow" style={{ display: 'flex', alignItems: 'center', gap: 0, flexWrap: 'wrap' }}>
+            <div className="max-md:justify-self-center mono" style={{ fontSize: 12, color: 'var(--text-4)', letterSpacing: '0.12em', marginBottom: 24 }}>ARCHITECTURE FLOW</div>
+            <div className="tech-flow content-center" style={{ display: 'flex', alignItems: 'center', gap: 0, flexWrap: 'wrap' }}>
               {[
                 { label: 'Webcam', sub: 'OS capture' },
                 { label: 'Canvas', sub: 'JPEG frame' },
@@ -384,7 +384,7 @@ export default function HomePage() {
                 { label: 'Score', sub: '0–100 rolling' },
                 { label: 'React UI', sub: 'live display' },
               ].map(({ label, sub }, i, arr) => (
-                <div key={label} style={{ display: 'flex', alignItems: 'center' }}>
+                <div key={label} className='max-md:flex-col' style={{ display: 'flex', alignItems: 'center' }}>
                   <div style={{ textAlign: 'center', padding: '12px 16px' }}>
                     <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--text)' }}>{label}</div>
                     <div className="mono" style={{ fontSize: 11, color: 'var(--text-4)', marginTop: 4 }}>{sub}</div>
@@ -524,7 +524,7 @@ export default function HomePage() {
           .grid-2 { grid-template-columns: 1fr !important; gap: 40px !important; }
           .stat-row { flex-direction: column !important; gap: 30px !important; padding: 24px !important; }
           
-          .tech-flow { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }
+          .tech-flow { flex-direction: column !important; gap: 8px !important; }
           .tech-arrow { transform: rotate(90deg); margin: 6px 0; }
         }
       `}</style>
